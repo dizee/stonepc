@@ -1,0 +1,24 @@
+<header> 
+ <div class="container">
+  <div class="row">
+    <div class="col-md-6" id="nav_head"><h3><strong>STONEPC.COM</strong></h3>
+    </div> 
+    <div class="col-md-6" id="nav_head_icon">
+          <span class="glyphicon glyphicon-home" > </span>
+          <span class="glyphicon glyphicon-envelope" ></span>
+          <%=link_to ('address') do %><span class="glyphicon glyphicon-map-marker" data-toggle="tooltip" title="Address"> </span> <% end %> 
+          <%=link_to ('about') do %><span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="About Us" > </span> <% end %>
+    </div>
+  </div>
+  <div class="row" id="nav_bar">
+      <div class="col-md-6"><p>Service. Technology. People</p>
+      </div>
+      <div class="col-md-6" id="page_nav">
+        <%=link_to "Servers", 'server' %> / 
+        <%=link_to "Desktops", 'desktop' %> /
+        <%=link_to "Services", 'service' %> /
+        <%=link_to "Solutions", 'solution' %> /
+      </div>
+   </div>  
+  </div>   
+</header>

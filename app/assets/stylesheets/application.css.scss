@@ -1,0 +1,109 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+*=require_tree .
+*=require_self
+
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap"; 
+ 
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+
+#main-content {
+    min-height: 700px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+
+.thumbnail {
+    border: dotted 1px #9ba136;
+}
+
+.jumbotron {
+    background-color: white;
+    color: #9ba136;
+    border: dotted 1px;
+    padding:5px; 
+            
+} 
+
+.specsrow {
+    padding-top: 10px;
+    padding-bottom:20px;
+    border-bottom:1px dotted #9ba136;
+    &:last-of-type {
+      border-bottom:none;
+    }
+}
+
+
+header { 
+    font-weight: bold;
+    background: linear-gradient(#5d6029, #919d43);
+    padding-top:12px;
+    padding-bottom:12px;
+    text-align: left;
+    color: white;
+    
+    .glyphicon {
+      dislplay: inline-block;
+      top: 25px;
+      padding-left: 5px;
+      padding-right: 5px;        
+    
+}
+  
+      #nav_bar {border-bottom:1px solid white;}
+      #nav_head_icon {float:right; text-align:right;}
+      #page_nav {text-align:right;}
+  
+}
+
+footer {
+      padding-top:5px;
+      padding-bottom:5px;
+      background-color: #919d43;
+      color: #F4F2DC;
+      text-align: center;
+  
+}
+
+#address {
+      display:block;
+      padding-top:40px; 
+      margin-bottom:auto;
+      /*text-align: center;*/ 
+      .row {
+        padding-top: none;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        &:last-of-type {
+          padding-top:10px;
+          padding-bottom:5px;
+        }
+      }
+      #location_map {
+        border-right: 1px dotted #9ba136 ;
+      }
+        
+}
+

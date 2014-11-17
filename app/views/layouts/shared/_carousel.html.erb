@@ -1,0 +1,35 @@
+<!--Carousel-->
+<div class="container">
+  <div id="index-carousel" class="carousel slide" data-ride="carousel" interval="2000">
+    <!--Indicator-->
+    <ol class="carousel-indicators">
+      <li data-target="#index-carousel" data-slide-to="o" class="active"> </li>
+      <li data-target="#index-carousel" data-slide-to="1"> </li>
+    </ol>
+    
+    <!--Wrapper for slides-->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%=image_tag("E5_headerbanner.png", class:"img-rounded") %>
+        <div class="carousel-caption">
+          <h4>Intel Server</h4>
+        </div>
+      </div>  
+      <div class="item">
+        <%=image_tag("pro_performance_intel.png", class:"img-rounded") %>
+        <div class="carousel-caption">
+          <h4>Gaming system</h4>
+        </div>
+      </div>  
+    </div>  
+    
+    <!--Controls-->
+    <a class="left carousel-control" href="#index-carousel"  role="button" data-slide="prev"> 
+      <span class="glyphicon glyphicon-chevron-left"> </span>
+    </a>
+    <a class="right carousel-control" href="#index-carousel"  role="button" data-slide="next"> 
+      <span class="glyphicon glyphicon-chevron-right"> </span>
+    </a>
+    
+  </div> 
+</div>   <!--Carousel-->
